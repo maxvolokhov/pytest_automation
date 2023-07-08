@@ -5,7 +5,6 @@ For 10 XPATH locators write 10 CSS locators which find the same element'''
 url = 'https://www.apple.com/'
 
 # 30 Xpath locators
-
 search_button = '//a[@id="globalnav-menubutton-link-search"]'
 learn_more_text_for_macbook = '''//a[@class="icon icon-after icon-chevronright"][@href="/macbook-air-13-and-15-m2/"]
 [text()="Learn more"]'''
