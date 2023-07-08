@@ -11,17 +11,27 @@ def create_human():
     yield human
     print('Human has been created!')
 
+
 @pytest.fixture()
 def create_human_male():
     human = Human(name='Stepan', age=30, gender='male')
     yield human
     print('Male has been created!')
 
+
 @pytest.fixture()
 def create_human_female():
     human = Human(name='Anna', age=27, gender='female')
     yield human
     print('Female has been created')
+
+
+@pytest.fixture()
+def create_human_with_zeo_age():
+    human = Human(name='Alice', age=0, gender='female')
+    yield human
+    print('Human with zero age has been created')
+
 
 @pytest.fixture()
 def random_gender_create():
